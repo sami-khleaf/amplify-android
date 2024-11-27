@@ -25,9 +25,9 @@ group = properties["POM_GROUP"].toString()
 
 android {
     namespace = "com.amplifyframework.storage.s3"
-    defaultConfig {
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-    }
+//    defaultConfig {
+//        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+//    }
     testOptions {
         execution = "ANDROIDX_TEST_ORCHESTRATOR"
     }
