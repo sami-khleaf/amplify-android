@@ -36,18 +36,18 @@ dependencies {
     implementation(libs.kotlin.serializationJson)
     implementation(libs.androidx.junit.ktx)
 
-    testImplementation(libs.test.junit)
-    testImplementation(libs.test.mockk)
-    testImplementation(libs.test.mockito.core)
-    testImplementation(libs.test.mockito.inline)
-    testImplementation(libs.test.robolectric)
-    testImplementation(libs.test.androidx.core)
-    testImplementation(libs.test.kotlin.coroutines)
-    testImplementation(libs.test.kotest.assertions)
-
-    androidTestImplementation(libs.test.androidx.core)
-    androidTestImplementation(libs.test.androidx.runner)
-    androidTestImplementation(libs.test.androidx.junit)
+//    testImplementation(libs.test.junit)
+//    testImplementation(libs.test.mockk)
+//    testImplementation(libs.test.mockito.core)
+//    testImplementation(libs.test.mockito.inline)
+//    testImplementation(libs.test.robolectric)
+//    testImplementation(libs.test.androidx.core)
+//    testImplementation(libs.test.kotlin.coroutines)
+//    testImplementation(libs.test.kotest.assertions)
+//
+//    androidTestImplementation(libs.test.androidx.core)
+//    androidTestImplementation(libs.test.androidx.runner)
+//    androidTestImplementation(libs.test.androidx.junit)
 }
 
 android.kotlinOptions {

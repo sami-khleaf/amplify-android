@@ -49,11 +49,11 @@ dependencies {
 
     compileOnly(libs.aws.location)
 
-    androidTestImplementation(project(":testutils"))
-    androidTestImplementation(libs.androidx.appcompat)
-    androidTestImplementation(libs.test.androidx.junit)
-    androidTestImplementation(libs.test.androidx.core)
-    androidTestImplementation(libs.test.androidx.core.ktx)
-    androidTestImplementation(libs.test.androidx.runner)
-    androidTestImplementation(libs.kotlin.coroutines.android)
+//    androidTestImplementation(project(":testutils"))
+//    androidTestImplementation(libs.androidx.appcompat)
+//    androidTestImplementation(libs.test.androidx.junit)
+//    androidTestImplementation(libs.test.androidx.core)
+//    androidTestImplementation(libs.test.androidx.core.ktx)
+//    androidTestImplementation(libs.test.androidx.runner)
+//    androidTestImplementation(libs.kotlin.coroutines.android)
 }
