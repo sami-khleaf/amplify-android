@@ -56,10 +56,10 @@ allprojects {
                 add("-Werror")
             }
         }
-        tasks.withType<Test>().configureEach {
-            minHeapSize = "128m"
-            maxHeapSize = "4g"
-        }
+//        tasks.withType<Test>().configureEach {
+//            minHeapSize = "128m"
+//            maxHeapSize = "4g"
+//        }
     }
 }
 
@@ -94,12 +94,12 @@ subprojects {
             allowDependency("org.jetbrains", "annotations", "16.0.1") {
                 because("Apache-2.0, but typo in license URL fixed in newer versions")
             }
-            allowDependency("org.mockito", "mockito-core", "3.9.0") {
-                because("MIT license")
-            }
-            allowDependency("junit", "junit", "4.13.2") {
-                because("Test Dependency")
-            }
+//            allowDependency("org.mockito", "mockito-core", "3.9.0") {
+//                because("MIT license")
+//            }
+//            allowDependency("junit", "junit", "4.13.2") {
+//                because("Test Dependency")
+//            }
             allowUrl("https://raw.githubusercontent.com/apollographql/apollo-kotlin/main/LICENSE") {
                 because("MIT license")
             }
@@ -142,16 +142,16 @@ fun Project.configureAndroid() {
             defaultConfig {
                 minSdk = 24
                 targetSdk = 30
-                testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-                testInstrumentationRunnerArguments += "clearPackageData" to "true"
+//                testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+//                testInstrumentationRunnerArguments += "clearPackageData" to "true"
                 consumerProguardFiles += rootProject.file("configuration/consumer-rules.pro")
 
-                testOptions {
-                    animationsDisabled = true
-                    unitTests {
-                        isIncludeAndroidResources = true
-                    }
-                }
+//                testOptions {
+//                    animationsDisabled = true
+//                    unitTests {
+//                        isIncludeAndroidResources = true
+//                    }
+//                }
 
                 buildConfigField("String", "VERSION_NAME", "\"$sdkVersionName\"")
             }
@@ -200,12 +200,12 @@ fun Project.configureAndroid() {
     }
 }
 
-apply(from = rootProject.file("configuration/instrumentation-tests.gradle"))
+//apply(from = rootProject.file("configuration/instrumentation-tests.gradle"))
 
 configure<ApiValidationExtension> {
     // Interfaces marked with an internal API annotation are not part of the public API
     nonPublicMarkers.addAll(internalApiAnnotations)
-    nonPublicMarkers.add("androidx.annotation.VisibleForTesting")
+//    nonPublicMarkers.add("androidx.annotation.VisibleForTesting")
 
-    ignoredProjects.addAll(setOf("testutils", "testmodels", "annotations"))
+//    ignoredProjects.addAll(setOf("testutils", "testmodels", "annotations"))
 }

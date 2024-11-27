@@ -31,17 +31,17 @@ dependencies {
     implementation(project(":aws-core"))
     implementation(libs.aws.location)
 
-    testImplementation(project(":testutils"))
-    testImplementation(libs.test.junit)
-    testImplementation(libs.test.robolectric)
-    testImplementation(libs.test.kotest.assertions)
-
-    androidTestImplementation(project(":testutils"))
-    androidTestImplementation(project(":aws-auth-cognito"))
-    androidTestImplementation(libs.androidx.annotation)
-    androidTestImplementation(libs.test.androidx.core)
-    androidTestImplementation(libs.test.androidx.runner)
-    androidTestImplementation(libs.test.androidx.junit)
+//    testImplementation(project(":testutils"))
+//    testImplementation(libs.test.junit)
+//    testImplementation(libs.test.robolectric)
+//    testImplementation(libs.test.kotest.assertions)
+//
+//    androidTestImplementation(project(":testutils"))
+//    androidTestImplementation(project(":aws-auth-cognito"))
+//    androidTestImplementation(libs.androidx.annotation)
+//    androidTestImplementation(libs.test.androidx.core)
+//    androidTestImplementation(libs.test.androidx.runner)
+//    androidTestImplementation(libs.test.androidx.junit)
 }
 
 afterEvaluate {

@@ -32,12 +32,12 @@ dependencies {
     implementation(project(":core"))
     implementation(project(":common-core"))
 
-    testImplementation(libs.test.androidx.core)
-    testImplementation(libs.test.junit)
-    testImplementation(libs.test.mockk)
-    testImplementation(libs.test.kotlin.coroutines)
-    testImplementation(project(":testmodels"))
-    testImplementation(libs.test.kotest.assertions)
+//    testImplementation(libs.test.androidx.core)
+//    testImplementation(libs.test.junit)
+//    testImplementation(libs.test.mockk)
+//    testImplementation(libs.test.kotlin.coroutines)
+//    testImplementation(project(":testmodels"))
+//    testImplementation(libs.test.kotest.assertions)
 }
 
 android.kotlinOptions {

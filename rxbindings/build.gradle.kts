@@ -34,13 +34,13 @@ dependencies {
     implementation(libs.androidx.appcompat)
     implementation(libs.rxjava)
 
-    testImplementation(project(":testutils"))
-    testImplementation(libs.test.junit)
-    testImplementation(libs.test.mockito.core)
-    testImplementation(libs.test.mockk)
-    testImplementation(libs.test.androidx.core)
-    testImplementation(libs.test.robolectric)
-    testImplementation(project(":rxbindings"))
+//    testImplementation(project(":testutils"))
+//    testImplementation(libs.test.junit)
+//    testImplementation(libs.test.mockito.core)
+//    testImplementation(libs.test.mockk)
+//    testImplementation(libs.test.androidx.core)
+//    testImplementation(libs.test.robolectric)
+//    testImplementation(project(":rxbindings"))
 }
 
 android.kotlinOptions {

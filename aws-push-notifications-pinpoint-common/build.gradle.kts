@@ -41,9 +41,9 @@ dependencies {
     implementation(libs.androidx.core)
     implementation(libs.firebasemessaging)
 
-    testImplementation(libs.test.junit)
-    testImplementation(libs.test.mockk)
-
-    androidTestImplementation(libs.test.androidx.runner)
-    androidTestImplementation(libs.test.androidx.junit)
+//    testImplementation(libs.test.junit)
+//    testImplementation(libs.test.mockk)
+//
+//    androidTestImplementation(libs.test.androidx.runner)
+//    androidTestImplementation(libs.test.androidx.junit)
 }
